@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form to participate in this survey</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Enter your name: </label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required />
+        <label for="email" id="email-label">Enter your email: </label>
+        <input id="email" type="email" name="email" placeholder="enter your email" required/>
+        <label for="number" id="number-label">Number: </label>
+        <input id="number" type="number" name="age" min="10" max="100" placeholder="Age">
+      <label for="dropdown">Select your role: </label>
+
+        <select id="dropdown" name="role">
+          <option value="">(select one)</option>
+          <option value="student">Student</option>
+          <option value="full-time">Full-time job</option>
+          <option value="part-time">Part-time job</option>
+          <option value="intern">Internship/Co-op</option>
+        </select>
+
+        <p>Please select your gender: </p>
+        <label><input type="radio" name="gender" value="male" class="inline">Male</label>
+        <label><input type="radio" name="gender" value="female" class="inline">Female</label>
+        <label><input type="radio" name="gender" value="non-binary" class="inline">Non-Binary</label>
+
+        <p>Select your interests: </p>
+        <label><input type="checkbox" name="interest" value="sports">Sports </label>
+        <label><input type="checkbox" name="interest" value="music">Music </label>
+        <label><input type="checkbox" name="interest" value="books">Books </label>
+
+        <label for="comments">Additional comments: </label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </body>
+</html>
